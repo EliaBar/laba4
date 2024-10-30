@@ -159,26 +159,21 @@
 }
 
 @media (max-width: 768px) {
-
-
+ 
     .logo1{
-        margin-top: 5vh;
-    }
-
-    .logo2{
-        margin-top: 10vh;
+       margin-top: 30vh;
     }
 
     .Menu{
-        margin-top: 50vh;
+        margin-top: 1vh;
     }
     .dropdown{
-        top: 60vh;
+        top: 6vh;
     }
 
     .background {
         display: grid;
-    grid-template-rows: 1fr 1fr 6fr;
+    grid-template-rows: 1fr 1fr 2fr;
     }
 
     .top_,
@@ -189,7 +184,7 @@
 
     .bottom_{
         width: 100%; /* Розтягнути елементи на всю ширину */
-        height: 1300px;
+        height: 1500px;
     }
 
     .cards {

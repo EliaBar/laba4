@@ -69,6 +69,12 @@
     margin-bottom: 15px;
   }
 
+  .card a {
+    color: #d773a2;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
   .logo1{
     color: rgb(11, 1, 160);
     font-weight: 1000;
@@ -81,25 +87,63 @@
     margin-top: 10vh;
 }
 
-a{
+.logo2{
     color: rgba(0, 0, 0, 0.2);
     font-weight: 500;
     font-size: 2em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: absolute;
     text-decoration: none;
-    transition: transform 0.55s ease;
-}
-
-.logo2{
+    margin-top: -90vh;
      margin-left: 20%; 
+     transition: color 0.55s ease, paddind-left 0.3 ease;
 }
 
 .logo2:hover {
-    color: red;
+    transform: scale(1.2);
+    color: honeydew;
 }
 
 .Menu{
+    color: rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    text-decoration: none;
+    margin-top: -90vh;
     margin-left: 80%; 
+}
+
+.Menu:hover {
+    color: honeydew;
+}
+
+.dropdown {
+    display: none; 
+    position: absolute;
+    top: 97%; 
+    left: 80%;
+    background-color: #f2d3e3; /* Ensure background color is set */
+}
+
+.Menu:hover + .dropdown {
+    display: block; 
+}
+
+.dropdown a {
+    display: block; 
+    padding: 10px 15px; 
+    color: black; 
+    text-decoration: none; 
+}
+
+.dropdown a:hover {
+    background-color: honeydew; 
+}
+
+.dropdown li {
+    position: relative; /* Ensure dropdown items do not overlap */
+    width: 100%; /* Ensure items take full width of dropdown */
 }
 

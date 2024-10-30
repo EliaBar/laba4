@@ -160,6 +160,22 @@
 
 @media (max-width: 768px) {
 
+
+    .logo1{
+        margin-top: 5vh;
+    }
+
+    .logo2{
+        margin-top: 10vh;
+    }
+
+    .Menu{
+        margin-top: 50vh;
+    }
+    .dropdown{
+        top: 60vh;
+    }
+
     .background {
         display: grid;
     grid-template-rows: 1fr 1fr 6fr;

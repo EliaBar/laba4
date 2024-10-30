@@ -38,7 +38,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    margin-top: -100px;
+    position: relative; /* Додаємо position для можливості підняття */
+    top: -13vh;
     max-width: 70%;
     max-height: 70vh; 
     margin: 0 auto;
@@ -53,6 +54,7 @@
     position: relative;
     transform: translateY(0); 
     max-height: 50vh;
+    transition: color 0.55s ease, paddind-left 0.3 ease;
   }
   .card:nth-child(2) {
     transform: translateY(5vh); 
@@ -60,6 +62,10 @@
   .card:nth-child(3) {
     transform: translateY(10vh); 
   }
+
+  .card:hover {
+    transform: scale(1.2);
+}
 
   .card img {
     width: 100%;
@@ -111,7 +117,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: absolute;
     text-decoration: none;
-    margin-top: -90vh;
+    margin-top: -12vh;
     margin-left: 80%; 
 }
 
@@ -119,15 +125,20 @@
     color: honeydew;
 }
 
+.menu-container {
+    position: relative; 
+}
+
 .dropdown {
     display: none; 
     position: absolute;
-    top: 97%; 
+    bottom: -4vh;
     left: 80%;
-    background-color: #f2d3e3; /* Ensure background color is set */
+    background-color: honeydew;
+    z-index: 1; 
 }
 
-.Menu:hover + .dropdown {
+.menu-container:hover .dropdown {
     display: block; 
 }
 
@@ -143,7 +154,46 @@
 }
 
 .dropdown li {
-    position: relative; /* Ensure dropdown items do not overlap */
-    width: 100%; /* Ensure items take full width of dropdown */
+    position: relative; 
+    width: 100%; 
 }
 
+@media (max-width: 768px) {
+
+    .background {
+        display: grid;
+    grid-template-rows: 1fr 1fr 6fr;
+    }
+
+    .top_,
+    .center_line {
+        width: 100%; /* Розтягнути елементи на всю ширину */
+        height: 250px;
+    }
+
+    .bottom_{
+        width: 100%; /* Розтягнути елементи на всю ширину */
+        height: 1300px;
+    }
+
+    .cards {
+        margin-top: 500px;
+        display: flex;
+        flex-direction: column; 
+        gap: 20px; 
+        width: 100%; 
+        padding: 0 10px;
+    }
+
+    .card {
+        max-width: 100%; 
+        margin: 0 auto; 
+        transform: none; 
+    }
+
+    .card img { 
+        object-fit: contain;
+        max-width: 100%;
+        
+    }
+}

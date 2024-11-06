@@ -158,7 +158,7 @@
     width: 100%; 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
  
     .logo1{
        margin-top: 30vh;
@@ -166,6 +166,7 @@
 
     .Menu{
         margin-top: 1vh;
+        margin-left: 45vh;
     }
     .dropdown{
         top: 6vh;
@@ -178,13 +179,13 @@
 
     .top_,
     .center_line {
-        width: 100%; /* Розтягнути елементи на всю ширину */
+        width: 100%; 
         height: 250px;
     }
 
     .bottom_{
-        width: 100%; /* Розтягнути елементи на всю ширину */
-        height: 1500px;
+        width: 100%;
+        height: 1650px;
     }
 
     .cards {
@@ -197,14 +198,13 @@
     }
 
     .card {
-        max-width: 100%; 
-        margin: 0 auto; 
-        transform: none; 
-    }
-
-    .card img { 
-        object-fit: contain;
-        max-width: 100%;
-        
+        background-color: honeydew;
+        padding: 20px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transform: translateY(0);
+        max-height: 100%; 
+        transition: color 0.55s ease, padding-left 0.3s ease;
     }
 }

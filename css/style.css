@@ -56,7 +56,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
     transform: translateY(0); 
-    max-height: 50vh;
+    max-height: 70vh;
     transition: color 0.55s ease, paddind-left 0.3 ease;
   }
   .card:nth-child(2) {
@@ -70,18 +70,27 @@
     transform: scale(1.2);
 }
 
-  .card img {
+.card img {
     width: 100%;
-    height: auto; 
-    max-height: 100%;
+    height: auto;
+    max-height: 65%; 
+    object-fit: contain; 
     border-radius: 8px;
     margin-bottom: 15px;
-  }
+}
+
+.card h1{
+    object-fit: contain; 
+    white-space: nowrap;
+}
 
   .card a {
+    object-fit: contain; 
     color: #d773a2;
     text-decoration: none;
     font-weight: bold;
+    margin-top: auto;
+    white-space: nowrap;
   }
 
   .logo1{

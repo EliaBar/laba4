@@ -8,6 +8,12 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
+}
+
+.menu-container{
+    display: grid;
+    position:relative; 
 }
 
 .background{
@@ -20,25 +26,22 @@
 }
 
 .top_{
-    display: grid;
-    background-color:  #f2d3e3;
-}
-
-.bottom_{
-    display: grid;
     background-color:  #f2d3e3;
 }
 
 .center_line{
-    display: grid;
     background-color: rgb(128, 105, 255);
+} 
+
+.bottom_{
+    background-color:  #f2d3e3;
 }
 
 .cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    position: relative; /* Додаємо position для можливості підняття */
+    position: relative;
     top: -13vh;
     max-width: 70%;
     max-height: 70vh; 
@@ -125,10 +128,6 @@
     color: honeydew;
 }
 
-.menu-container {
-    position: relative; 
-}
-
 .dropdown {
     display: none; 
     position: absolute;
@@ -159,14 +158,22 @@
 }
 
 @media (max-width: 500px) {
+
+    .body{
+        width: 50vw;
+    }
+    .main_container{
+        width: 95vw;
+    }
  
     .logo1{
-       margin-top: 30vh;
+       margin-top: 35vh;
+       color: #f2d3e3;
     }
 
     .Menu{
         margin-top: 1vh;
-        margin-left: 45vh;
+        margin-right: 5vh;
     }
     .dropdown{
         top: 6vh;
